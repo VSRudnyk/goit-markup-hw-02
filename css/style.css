@@ -1,0 +1,102 @@
+/* Цвет основного текста: #212121 */
+/* Цвет вторичного текста: #757575 */
+/* Белый цвет текста: #ffffff */
+/* Акцент: #2196F3; */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: #212121;
+  font-family: Roboto;
+}
+.list {
+  list-style: none;
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+}
+.logo-blue {
+  color: var(--accent-color);
+}
+
+.logo-primiry {
+  color: var(--primary-text-color);
+}
+
+/* Button */
+
+/* Site nav */
+.site-nav {
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+.site-nav:hover,
+.site-nav:focus {
+  color: #2196f3;
+}
+
+.contacts {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+.contacts:hover,
+.contacts:focus {
+  color: #2196f3;
+}
+.site-nav .current {
+  color: var(--accent-color);
+}
+
+/* Section */
+.section-title {
+  color: var(--primary-text-color);
+  font-size: 36px;
+}
+
+/* Features */
+.feature-list .title {
+  color: var(--primary-text-color);
+  font-size: 14px;
+}
+.feature-list .description {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+/* Team */
+.team-list .name {
+  color: var(--primary-text-color);
+  font-size: 16px;
+}
+.team-list .post {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+.address-block .address {
+  color: var(--white-text-color);
+  font-size: 14px;
+}
+.address-block {
+  font-style: normal;
+}
+.address-block .contacts-footer {
+  color: #757575;
+}
+.footer .logo-footer {
+  color: var(--white-text-color);
+}
+.link {
+  text-decoration: none;
+}
