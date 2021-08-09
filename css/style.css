@@ -13,7 +13,7 @@
 body {
   background-color: var(--primary-bg-color);
   color: #212121;
-  font-family: Roboto;
+  font-family: "Roboto";
 }
 .list {
   list-style: none;
@@ -22,24 +22,26 @@ body {
 /* Logo */
 .logo {
   font-size: 26px;
+  font-family: "Raleway";
+  font-style: normal;
+  color: #000;
 }
 .logo-blue {
   color: var(--accent-color);
 }
 
-.logo-primiry {
-  color: var(--primary-text-color);
-}
-
 /* Button */
-
+.btn {
+  color: var(--white-text-color);
+  background: var(--accent-color);
+}
 /* Site nav */
 .site-nav {
   font-size: 14px;
   color: var(--primary-text-color);
 }
-.site-nav:hover,
-.site-nav:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: #2196f3;
 }
 
@@ -94,7 +96,7 @@ body {
 .address-block .contacts-footer {
   color: #757575;
 }
-.footer .logo-footer {
+.footer .logo.link {
   color: var(--white-text-color);
 }
 .link {
