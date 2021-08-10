@@ -6,40 +6,59 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --white-text-color: #ffffff;
+  --black-text-color: #000000;
   --accent-color: #2196f3;
   --primary-bg-color: #ffffff;
+  --btn-bg-color: #f5f4fa;
 }
 
 body {
   background-color: var(--primary-bg-color);
   color: #212121;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 }
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 
 /* Logo */
 .logo {
+  font-weight: bold;
   font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+  font-family: 'Raleway', sans-serif;
 }
 .logo-blue {
   color: var(--accent-color);
 }
 
-.logo-primiry {
-  color: var(--primary-text-color);
+/* Button */
+.btn {
+  background: var(--btn-bg-color);
+  border-radius: 4px;
 }
 
-/* Button */
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
 
 /* Site nav */
 .site-nav {
+  font-weight: 500;
   font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.site-nav:hover,
-.site-nav:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: #2196f3;
 }
 
@@ -47,12 +66,18 @@ body {
   color: var(--secondary-text-color);
   font-size: 14px;
 }
-.contacts:hover,
-.contacts:focus {
+.contacts.link:hover,
+.contacts.link:focus {
   color: #2196f3;
 }
 .site-nav .current {
   color: var(--accent-color);
+}
+.auth {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* Section */
@@ -71,11 +96,11 @@ body {
   font-size: 14px;
 }
 /* Team */
-.team-list .name {
+.name {
   color: var(--primary-text-color);
   font-size: 16px;
 }
-.team-list .post {
+.post {
   color: var(--secondary-text-color);
   font-size: 16px;
 }
@@ -91,12 +116,13 @@ body {
 .address-block {
   font-style: normal;
 }
-.address-block .contacts-footer {
-  color: #757575;
+.address-block > .contacts {
+  color: var(--secondary-text-color);
 }
-.footer .logo-footer {
+.address:hover,
+.address:focus {
+  color: var(--accent-color);
+}
+.footer .logo.link {
   color: var(--white-text-color);
-}
-.link {
-  text-decoration: none;
 }
