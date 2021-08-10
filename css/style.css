@@ -16,6 +16,7 @@ body {
   background-color: var(--primary-bg-color);
   color: #212121;
   font-family: 'Roboto', sans-serif;
+
 }
 .list {
   list-style: none;
@@ -32,6 +33,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--black-text-color);
   font-family: 'Raleway', sans-serif;
+
 }
 .logo-blue {
   color: var(--accent-color);
@@ -122,7 +124,7 @@ body {
 .address:hover,
 .address:focus {
   color: var(--accent-color);
-}
+
 .footer .logo.link {
   color: var(--white-text-color);
 }
